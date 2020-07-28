@@ -1,0 +1,40 @@
+{%extends 'design.html'%}
+
+{%block content%}
+
+<h1><u>My First Calculater</u></h1>
+<hr>
+<h1>Result:{{Add_result}}{{Multi_result}}{{sub_result}}{{div_result}}</h1>
+<hr>
+<h1><u>Addtion</u></h1>
+<form action="add">
+Enter The Number1 :<input type="number" name="num1"><br>
+Enter The Number2 :<input type="number" name="num2"><br>
+<input type="submit"  value="Add"><br>
+<hr>
+</form>
+<h1><u>Multiplication</u></h1>
+<form action="multi">
+    Enter The Number1 :<input type="number" name="num3"><br>
+    Enter The Number2 :<input type="number" name="num4"><br>
+
+    <input type="submit"  value="multi"><br>
+</form>
+<hr>
+<h1><u>Subtraction</u></h1>
+<form action="sub">
+    Enter The Number1 :<input type="number" name="num5"><br>
+    Enter The Number2 :<input type="number" name="num6"><br>
+
+    <input type="submit"  value="subtract"><br>
+</form>
+<hr>
+<h1><u>Division</u></h1>
+<form action="div">
+    Enter The Number1 :<input type="number" name="num7"><br>
+    Enter The Number2 :<input type="number" name="num8"><br>
+
+    <input type="submit"  value="Divide"><br>
+</form>
+
+{%endblock%}
